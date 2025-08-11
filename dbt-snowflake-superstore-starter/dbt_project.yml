@@ -1,0 +1,12 @@
+name: dbt_snowflake_superstore
+version: 1.0.0
+config-version: 2
+
+profile: default  # managed in dbt Cloud UI
+
+model-paths: ["models"]
+target-path: "target"
+
+models:
+  dbt_snowflake_superstore:
+    +materialized: table

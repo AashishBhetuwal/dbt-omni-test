@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: fct_orders_enriched
+    description: "Orders joined to Customers from SUPERSTORE_DATA.SUPERSTORE"
+    columns:
+      - name: ORDER_ID
+        tests: [not_null]
+      - name: CUSTOMER
+        description: "Customer name"
+        meta:
+          contains_pii: true
+      - name: ORDER_DATE
+        description: "Date of order"
+      - name: SALES
+        description: "Sales amount"

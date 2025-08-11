@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: superstore
+    database: SUPERSTORE_DATA
+    schema: SUPERSTORE
+    tables:
+      - name: ORDERS
+      - name: CUSTOMERS
+      - name: PRODUCTS
+      - name: RETURNS
+      - name: SALES
+      - name: PEOPLE
